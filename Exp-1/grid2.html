@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        * {
+            margin: 1px;
+            padding: 5px;
+        }
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto 100px 200px 100px;
+        }
+        .header {
+            background-color: bisque;
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        .sb1 {
+            background-color: aqua;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .sb2 {
+            background-color: aqua;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .sb3 {
+            background-color: aqua;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .sb {
+            background-color: yellowgreen;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .mn {
+            background-color: yellow;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .footer {
+            background-color: blue;
+            grid-column: 1/5;
+            grid-row: 4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sb1">Small Box 1</div>
+        <div class="sb2">Small Box 2</div>
+        <div class="sb3">Small Box 3</div>
+        <div class="sb">Side Bar</div>
+        <div class="mn">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

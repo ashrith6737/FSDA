@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Grid</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+            height: 33.33%;
+            box-sizing: border-box;
+            color: white;
+            font-size: 20px;
+            border: 1px solid white;
+        }
+
+        .box:nth-child(1) { background-color: red; }
+        .box:nth-child(2) { background-color: green; }
+        .box:nth-child(3) { background-color: blue; }
+        .box:nth-child(4) { background-color: orange; }
+        .box:nth-child(5) { background-color: purple; }
+        .box:nth-child(6) { background-color: teal; }
+        .box:nth-child(7) { background-color: pink; }
+        .box:nth-child(8) { background-color: brown; }
+        .box:nth-child(9) { background-color: yellow; color: black; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+</body>
+</html>
